@@ -2,7 +2,7 @@ FROM jenkinsci/jnlp-slave:latest-alpine
 
 User root
 RUN apk --no-cache update && \
-    apk --nocache add --update curl groff less python && \
+    apk --no-cache add --update curl groff less python && \
     curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" && \
     unzip awscli-bundle.zip && \
     chmod +x ./awscli-bundle/install && \
