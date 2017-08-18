@@ -1,4 +1,4 @@
-FROM jenkinsci/jnlp-slave:latest-alpine
+FROM jenkinsci/jnlp-slave:alpine
 
 User root
 RUN apk --no-cache update && \
