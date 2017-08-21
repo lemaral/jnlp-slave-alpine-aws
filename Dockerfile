@@ -3,7 +3,7 @@ FROM jenkinsci/jnlp-slave:3.7-1-alpine
 User root
 RUN apk --no-cache update && \
     apk --no-cache add --update python && \
-    apk --no-cache add --update ca-certificates && update-ca-certificates && \
+    apk --no-cache add --update ca-certificates wget && update-ca-certificates && \
     wget "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -O "awscli-bundle.zip" && \
     unzip awscli-bundle.zip && \
     chmod +x ./awscli-bundle/install && \
