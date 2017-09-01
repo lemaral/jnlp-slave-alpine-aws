@@ -1,1 +1,1 @@
-# jnlp-slave-alpine-aws
+# jnlp-slave-alpine-aws:latest
