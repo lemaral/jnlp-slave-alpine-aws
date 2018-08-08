@@ -1,4 +1,4 @@
-FROM jenkinsci/jnlp-slave:alpine
+FROM jenkinsci/jnlp-slave:3.23-1-alpine
 #curl is currently broken on alpine, either install curl-dev to upgrade libcurl or use wget instead
 User root
 RUN apk --no-cache update && \
